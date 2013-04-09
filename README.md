@@ -1,4 +1,6 @@
-A-good-death
+A-good-death - Create End Of Life experiences.
 ============
 
-Thesis process
+A good death examines dying and death from a design and user experience perspective. The project re imagines legal forms such as living wills and durable power of attorney to improve the emotionally complex process of End of Life planning. The project challenges it’s users to explore and create end of life experiences. It considers the role of interactive technologies and strives to design a dynamic and unique experience-based journey through EoL decisions to encourage more open, comfortable, and proactive End of Life planning. A Good Death is a toolkit that aims to clarify difficult choices and encourage dialogue among families and friends. The project leverages the comfort, privacy, and flexibility of online spaces to reduce the stigma of death offline. The project responds to the legal and economic forces that shape these decisions as well as the cultural and religious beliefs that define an individual’s role in their own death and dying experience.
+
+(This is a documentation of my thesis process as part of an MFA DT program at Parsons.)
