@@ -1,0 +1,28 @@
+Structure:
+
+
+Create a php file for the header where the NAVBAR is going to be written: include 'navbar.php';
+
+Use AJAX- to changhe content on the page by navigating withoutrefreshing.
+
+
+How can i be efficient:
+images? should i create sprites. 
+naming convension for id's and images.
+
+hover states
+
+create templates to duplicate/
+
+
+this weekend- user test interactions. 
+
+make one screen after the other.
+
+
+
+add options to add more then one friend---if this one is taken...maybe give an option to write his name.
+
+
+
+write a json object and create an html template to popluate the page using AJAX

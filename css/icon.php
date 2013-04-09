@@ -1,0 +1,1 @@
+<img id="icon" src="images/icons/icon1.png">
