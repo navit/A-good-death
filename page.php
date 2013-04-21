@@ -1,44 +1,7 @@
 <?php
 
-// make arrays for our variable page content
-$title= array(
-	"post mortem planning",
-	"post mortem planning",
-	"title",
-	"post mortem planning");
-
-$questions = array(
-	"Have you ever thought about the end of <br>your life and how you want it to unfold?",
-	"Ever joked about what you would want your funeral to look like, what song would be played and where would it take place?",
-	"Question 3",
-	"Question 4",
-	"Question 5",
-	"Question 6",
-	"etc");
-	
-	
-$leftanswers = array(
-	"YES, OF COURSE",
-	"YES",
-	"L Answer 3",
-	"L etc");
-	
-	
-$rightanswers = array(
-	"NO, I AM YOUNG AND HEALTHY, DO NOT LIKE TO DISCUSS MY DEATH.",
-	"NO, NEVER",
-	"R Answer 3",
-	"R etc");
-		
-if ($_REQUEST['page']) {
-	$page = $_REQUEST['page'];
-
-	
-} else {
-	//if they haven't been here yet, just give them the first page (key 0)
-	$page = 0;		
-}
-
+ini_set('display_errors', 'On');
+include 'content.php';
 
 ?>
 
@@ -71,7 +34,7 @@ if ($_REQUEST['page']) {
 	        
    </head>
 		
-		<body>
+		<body id="toolkit">
 			<header>
 			
 			<!-- you could set the width of your progress bar based on how 
@@ -95,20 +58,66 @@ if ($_REQUEST['page']) {
 				<h1 id="title"><?php echo $title[$page]; ?></h1>
 				<h2 id= "question"><?php echo $questions[$page]; ?></h2>
 				
-				<div id ="choices">
-				<div id="leftAnswer" class="answer"><center><a class="linkAnswer" href="page.php?page=<?php echo $page - 1; ?>"><?php echo $leftanswers[$page]; ?></a></center></div>
-				<div id ="or"><p>OR</p></div>
-				<div id="rightAnswer" class="answer"><center><a class="linkAnswer" href="page.php?page=<?php echo $page + 1; ?>"><?php echo $rightanswers[$page]; ?></a></center></div>
+				<div id ="choices">	
+
+				
+				<?php 
+				
+				if ($numofanswers[$page] == "one") {
+						
+						echo '<div class="top answer"><center><a class="linkAnswer" href="page.php?page=' .  ($page - 1) . '">' . $topAnswer[$page] . '</a></center></div>';
+				}
+				
+				
+				if ($numofanswers[$page] == "two") {
+						
+						echo '<div class="TemplateLeft answer"><center><a class="linkAnswer" href="page.php?page=' .  ($page - 1) . '">' . $leftAnswers[$page] . '</a></center></div>';
+						echo '<div class="TemplateRight answer"><center><a class="linkAnswer" href="page.php?page=' . ($page + 1) . '">' . $rightAnswers[$page] . '</a></center></div>';
+				}
+				
+				
+				if ($numofanswers[$page] == "three") {
+						
+						echo '<div class="TemplateLeft answer"><center><a class="linkAnswer" href="page.php?page=' .  ($page - 1) . '">' . $leftAnswers[$page] . '</a></center></div>';
+						echo '<div class="TemplateRight answer"><center><a class="linkAnswer" href="page.php?page=' . ($page + 1) . '">' . $rightAnswers[$page] . '</a></center></div>';
+						echo '<div class="third answer"><center><a class="linkAnswer" href="page.php?page=' . ($page + 1) . '">' . $thirdAnswers[$page] . '</a></center></div>';
+				}
+				
+				
+				if ($numofanswers[$page] == "four") {
+						
+						echo '<div class="TemplateLeft answer"><center><a class="linkAnswer" href="page.php?page=' .  ($page - 1) . '">' . $leftAnswers[$page] . '</a></center></div>';
+						echo '<div class="TemplateRight answer"><center><a class="linkAnswer" href="page.php?page=' . ($page + 1) . '">' . $rightAnswers[$page] . '</a></center></div>';
+						echo '<div class="LeftBottom answer"><center><a class="linkAnswer" href="page.php?page=' .  ($page - 1) . '">' . $leftBottomAnswers[$page] . '</a></center></div>';
+						echo '<div class="RightBottom answer"><center><a class="linkAnswer" href="page.php?page=' . ($page + 1) . '">' . $rightBottomAnswers[$page] . '</a></center></div>';
+
+				}
+				
+							
+				?>	
+
 				</div><!-- closing choices -->
 			</div><!-- losing content -->
 			
 			<aside>
 			<img id="info" src="images/sideBar/data<?php echo $page; ?>.png">
 			</aside>
+			
+			<!--
+<aside>
+			<img id="info" <?php if ($page==0) {
+			echo "style='margin-left:-400px;'";
+			}
+			
+			?> src="images/sideBar/data<?php echo $page; ?>.png">
+			</aside>
+-->
 			<footer>
-			<?php
+			<!--
+<?php
 				include 'footer.php';
 			?>
+-->
 			</footer>
 		</body>
 </html>

@@ -1,0 +1,463 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+======================================================================+++++++++++++++++++++++++++++++======================================================
+html{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*-----------------------------------------------------------------------------------*
+/* = homepage
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+body{
+width: 100%;	
+}
+nav#mainnav{	
+	float: right;	
+}
+nav#mainnav ul li{
+	display: inline;
+}
+
+/*-----------------------------------------------------------------------------------*
+/* = DIV 1 logo
+/*-----------------------------------------------------------------------------------*/
+img#homepage{
+	width: 100%;
+	z-index: -2;
+	position: absolute;
+	box-shadow: 5px 5px 29px #888888;
+}
+
+img#logo{
+	margin: 90px 0 0 584px;
+	z-index: -1;
+}
+div#homepageTop>h1{
+	font-size: 35px;
+	font-weight: 500;
+	margin: 15px 0 0px 535px;
+	color:white;
+	opacity: 0.7;
+	padding-bottom: 30px;
+}
+a#enter{
+color: white;
+margin-left:654px;
+font-family: 'Actor';
+font-size: 12pt;
+padding: 10px 20px 10px 20px;
+border: solid 2px white;
+border-radius: 3px;	
+}
+a#enter:hover{
+	color:#FF6666;
+	background: white;
+}
+
+
+/*-----------------------------------------------------------------------------------*
+/* = DIV 2 info
+/*-----------------------------------------------------------------------------------*/
+
+div#info>img{
+	margin-top: 70px;
+	z-index: -3;
+	position: absolute;	
+	box-shadow: 13px 10px 24px #888888;
+}
+img.allIcons{
+	margin:40px 0 0 110px;	
+}
+div#info h2{
+	font-size: 10pt;
+	line-height: 16pt;
+	text-align: center;
+}
+div.all{
+	width:300px;
+	margin-top: 80px;
+	margin-left: 170px;
+}
+div#name{
+	margin-left: 70px;
+	float:left;
+}
+div#voice{
+	float: left;
+	margin-left: 180px;
+}
+div#remember{
+	float: right;
+	margin-right: 100px;	
+}
+
+
+/*-----------------------------------------------------------------------------------*
+/* = DIV 3- about
+/*-----------------------------------------------------------------------------------*/
+
+div#about{
+	height: 410px;
+	margin-top: 340px;
+	background: rgba(154,212,222,0.62);
+	box-shadow: 8px 8px 19px #888888;
+}
+div#about>img{
+	margin: 90px 0 0 662px;
+}
+div#about>h3{
+	width: 600px;
+	font-family: 'Actor';
+	font-size: 11pt;
+	line-height: 17pt;
+	margin: 20px 0 0 390px;
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom:solid 1px black;
+}
+
+
+/*-----------------------------------------------------------------------------------*
+/* = DIV 4- contact
+/*-----------------------------------------------------------------------------------*/
+
+div#contact{
+	height: 140px;
+}
+div#contact h4{
+	font-family: 'Actor';
+	font-size: 9pt;
+	color:#FF6666;
+	/* margin-top: 30px; */
+}
+h4#link{
+	/* margin-top: 40px; */
+	margin-left: 380px;
+}
+h4#credits{
+	margin-left:870px;
+	/* margin-top: 20px;  */
+}
+div#social{
+	margin: 50px 0 0 640px;
+}
+div#social>img{
+	margin-right: 10px;
+}
+div#social>img:hover{
+	opacity:0.4;
+	filter:alpha(opacity=40);	
+}
+
+
+
+/*-----------------------------------------------------------------------------------*
+/* = toolkit
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+body#toolkit{ 
+	width:100%;
+	background: url(../images/backImage.png) no-repeat; 
+	margin: 0; 
+	padding: 0;
+}
+h1{
+	font-family:'PT Sans Narrow','Open Sans Condensed',sans-serif;
+	text-transform: uppercase;	
+}
+a{
+	text-decoration:none;
+}
+li{
+	display: inline;
+}
+
+/*-----------------------------------------------------------------------------------*
+/* = exit button 
+/*-----------------------------------------------------------------------------------*/
+
+div#out{
+	width:7%; 
+	margin-top:200px;
+	margin-left: -5px;
+	padding:10px 0 10px 5px;
+	float: left;
+	background: white;	
+	border:1px solid #FF6666;
+	border-radius: 3px;
+	box-shadow: 3px 3px 25px #aeaeae; 
+}
+a#exit{
+	font-family:'Actor';
+	font-size: 12px;
+	color:#FF6666;
+	margin-left: 10px;
+}
+
+/*-----------------------------------------------------------------------------------*
+/* = content 
+/*-----------------------------------------------------------------------------------*/
+
+div#content{
+	width:500px;
+	margin: 50px 0 0 260px;
+	float: left; 
+}
+h1.title{ 
+	width:400px; 
+	font-size: 40px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	font-weight: 600;
+	color: black;
+	float:left;
+	display: block;
+	margin-left:75px;
+	margin-top:-38px;
+}
+h2.question{ 
+	font-family:'Actor',sans-serif;
+	font-size: 15px;
+	line-height: 21px;
+	text-align: center;	
+	margin-left: 24px;
+	text-transform: uppercase;
+	color: black;
+	padding-top: 10px;
+}
+h2#shortQuestion{
+	margin-left: 45px;
+}
+p{ 
+	font-family:'Actor', sans-serif;
+	margin-top: 0; 
+	/* text-align: justify; */
+}
+img.line{
+	margin:70px 300px 0 290px;
+	width: 710px;
+}
+img#shortLine{
+	margin:30px 300px 0 290px;
+	width: 670px;	
+}
+img.icon{
+	width:13%;
+	margin-left: 30px; 
+}
+img#postPages{
+	width:13%;
+	margin-left: 15px; 
+}
+
+/*-----------------------------------------------------------------------------------*
+/* = progress bar
+/*-----------------------------------------------------------------------------------*/
+
+div#progressbar{
+	margin-top:10px;
+}
+
+/*-----------------------------------------------------------------------------------*
+/* = choices
+/*-----------------------------------------------------------------------------------*/
+
+div#choices{
+	margin-top: 40px;
+}
+/* types of answers */
+div.TemplateRight{
+	margin-left:280px;
+	margin-right: 30px;
+}
+div.TemplateLeft{
+	margin-left:53px;
+	float: left;
+}
+/* good for tall the answers on the page */
+div.answer{
+	width:177px; 
+	height: 55px;
+	border: solid 1px #3399CC;
+	border-radius: 3px;
+	box-shadow: 3px 3px 25px #a5a3a3; 
+	padding: 10px;
+}
+div.answer:hover{
+	background: white;
+}
+a.linkAnswer{
+    font-family:'Actor', sans-serif;
+    font-size: 9.5pt;
+    color: #3399CC;;    
+    text-transform: uppercase; 
+    vertical-align: middle;
+}
+a:hover{
+	color: #FF6666;
+}
+.clickLeft {
+	cursor: pointer;
+}
+.clickRight{
+	cursor: pointer;
+}
+#hoverMessage{
+	width:211px;
+	display: none;
+	margin-left: 380px;
+	margin-top: -79px;
+	opacity: 0.9;
+}
+#hoverMessage p{
+	margin-top:-70px; 
+	padding: 5px 0 0 45px;
+	font-family: 'Actor';
+	font-size: 11pt;
+	line-height: 15pt;
+}
+form{
+	margin-left:152px;
+}
+input.inputAnswer{
+	width:220px; 
+	height: 40px;
+	border: solid 1px #3399CC;
+	border-radius: 3px;
+	box-shadow: 3px 3px 25px #a5a3a3; 
+	font-size: 12px; 
+	font-family: 'Actor'; 
+	padding-left: 5px;
+}
+input.submitAnswer{
+	width:60px;
+	margin: 20px 0 0 81px;
+	border: solid 1px #3399CC;
+	border-radius: 3px;
+}
+form p{
+	padding:7px;
+}
+
+
+/*-----------------------------------------------------------------------------------*
+/* = side bar
+/*-----------------------------------------------------------------------------------*/
+
+aside>img{
+	width:250px;
+	margin-right: 97px;
+	float: right;
+
+}
+img#page3{
+	width:400px;
+	margin-top:0;
+	margin-right:60px;
+}
+img#page9{
+	width:300px;
+}
+/*
+img#graph{
+	width: 27px;
+	height: 27px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+img#info{
+	width: 30px;
+	height: 32px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+aside>h1{
+	font-family: 'PT Sans Narrow','Actor';
+	font-size: 16px;
+	color: #3399CC;
+}
+h1#oneline{
+padding-top: 15px;
+border-top: 1px solid #3399CC;
+	 
+}
+h1#twoLines{
+	line-height: 18px;
+}
+h2#source{
+	font-size: 11pt;
+	padding-top:15px;
+	padding-left: 0;	
+	border-top: 1px solid #3399CC;
+}
+aside>p{
+font-size: 10pt;
+line-height: 14pt;
+padding-bottom: 30px;
+	
+}
+*/
+
+
+
+
+
+
+
+
+

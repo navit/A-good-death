@@ -1,0 +1,6 @@
+
+1. how to hide the choices when they are not being used? (i have pages that have four choices...but those are unique)
+2. how to create different id's for the sidebar images? (they are different size)
+3. how to create a hover state for a button instead of taking the user to a next page
+
+
