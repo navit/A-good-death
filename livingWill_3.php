@@ -14,6 +14,8 @@ include 'content.php';
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script> 
+        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51748f4d2b87cc72"></script>
         <script type="text/javascript">
 			$(document).ready(function() {
 			    $("body").css("display", "none");
@@ -64,7 +66,15 @@ include 'content.php';
 			</div><!-- closing content -->
 			
 			<aside>
-			<img id="livingWill" src="images/sideBar/datalivingWill_2.png">
+			<form><input id="graveStories" type="text" name="story" placeholder="Share your own story here..."><br></form>
+			<img id="livingWill3" src="images/sideBar/datalivingWill_3.png">
+		
+				<img id ="social" src ="images/socialButtons.png">
+				<div class="addthis_toolbox addthis_default_style">
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+				<a class="addthis_button_tweet"></a>
+						
+				</div>
 			</aside>
 			</div>
 			

@@ -1,10 +1,3 @@
-<?php
-
-ini_set('display_errors', 'On');
-include 'content.php';
-
-?>
-
 <!doctype html>
 <html lang="en">
   <head> 
@@ -25,32 +18,19 @@ include 'content.php';
 			        linkLocation = this.href;
 			        $("body").fadeOut(400, redirectPage);      
 			    });
-			         
-			    function redirectPage() {
-			        window.location = linkLocation;
-			    }
-			    $('#clickLeft').click(function(){
-				    
-			    });
-			    
-			    $('clickRight').click(function(){
-				    
-			    });
+			    $(function() {
+                    $("#progressbar").progressbar({
+                            value:0
+                    });
+            });
 			});
 		</script>
 	        
    </head>
 		
 		<body id="toolkit">
-			<header>
-			
-			<!-- you could set the width of your progress bar based on how 
-			far along the user is in the question sequence
-			in this case, i'm setting it to the requested page * 10 + 10 %, 
-			so page 0 = 10%, page 1 = 20%, page 2 = 30%, etc… -->
-			<!-- <div id="progressbar" style="background-color:yellow; width:<?php echo 1 + $page *1; ?>%"><?php include 'header.php';?></div> -->
-			<?php include 'header.php';?>
-			</header>
+			<div id="progressbar">
+			</div>
 			
 			<div id="out">
 			<?php
@@ -67,8 +47,8 @@ include 'content.php';
 				<h2 class= "question">Have you ever thought about the end of<br>your life and how you want it to unfold?</h2>
 				
 				<div id ="choices">	
-					<div class="TemplateLeft answer clickLeft"><center><a class="linkAnswer" href="page1.php">YES,OF COURSE.</a></center></div>
-					<div class="TemplateRight answer clickRight"><center><a class="linkAnswer" href="pageNo1.php">NO, I AM YOUNG AND HEALTHY, DO NOT LIKE TO DISCUSS MY DEATH.</a></center></div>
+					<center><a id="TemplateLeft" class="answer" href="page1.php">YES, OF COURSE</a></center>
+					<center><a id="TemplateRight" class="answer" href="page1.php">NO, I AM YOUNG AND HEALTHY, DO NOT LIKE TO DISCUSS MY DEATH</a></center>
 				</div><!-- closing choices -->
 			</div><!-- losing content -->
 			

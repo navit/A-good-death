@@ -14,6 +14,9 @@ include 'content.php';
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script> 
+        <script type="text/javascript">var switchTo5x=true;</script>
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript">stLight.options({publisher: "6c3db8a7-f747-45d2-b332-e712f41865d9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
         <script type="text/javascript">
 			$(document).ready(function() {
 			    $("body").css("display", "none");
@@ -68,6 +71,10 @@ include 'content.php';
 			<aside>
 			<form><input id="personalStories" type="text" name="story" placeholder="Share your own story here..."><br></form>
 			<img src="images/sideBar/data7.png">
+			<span class='st_facebook_large' displayText='Facebook'></span>
+			<span class='st_twitter_large' displayText='Tweet'></span>
+			<span class='st_email_large' displayText='Email'></span>
+		
 			</aside>
 			</div>
 			

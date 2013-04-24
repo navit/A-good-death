@@ -65,7 +65,7 @@ include 'content.php';
 			</div><!-- closing content -->
 			
 			<aside>
-			<img id="livingWill" src="images/sideBar/datalivingWill_4.png">
+			<img id="livingWill4" src="images/sideBar/datalivingWill_4.png">
 			</aside>
 			</div>
 			

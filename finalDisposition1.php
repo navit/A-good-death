@@ -8,7 +8,7 @@ include 'content.php';
 <!doctype html>
 <html lang="en">
   <head> 
-         <title>living will</title> 
+        <title>Final Disposition</title> 
         <link type="stylesheet" rel="stylesheet" href="css/style.css" />
         <link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
@@ -34,18 +34,13 @@ include 'content.php';
 			    });
 		
 			});
-		</script>   
-	</head>
+		</script>
+	        
+   </head>
 		
 		<body id="toolkit">
 			<header>
-			
-			<!-- you could set the width of your progress bar based on how 
-			far along the user is in the question sequence
-			in this case, i'm setting it to the requested page * 10 + 10 %, 
-			so page 0 = 10%, page 1 = 20%, page 2 = 30%, etc… -->
-			<!-- <div id="progressbar" style="background-color:yellow; width:<?php echo 1 + $page *1; ?>%"><?php include 'header.php';?></div> -->
-			<?php include 'header.php';?>
+				<?php include 'header.php';?>
 			</header>
 			
 			<div id="out">
@@ -55,26 +50,26 @@ include 'content.php';
 
 			</div>
 			
-			<div id="LivingWilllLine"><img src="images/blueLivingWillLine.png"></div>
+			<div id="line"><img src="images/blueLine.png"></div>
 			<div id="wrapper">
-			<div id= "content">
-				<img class="icon livingWill" src="images/icons/livingWill.png">
-				<h1 class="title">LIVING WILL</h1>
-				<h2 class= "question">Would you like to take the first step to communicating your beliefs and wishes?<h2>
-				
-				<div id ="choices">	
-					<center><a id="TemplateLeft" class="answer" href="livingWill_1.php">YES</a></center>
-					<center><a id="TemplateRight" class="answer" href="#">NO,thanks</a></center>
-				</div><!-- closing choices -->
-			
-			</div><!-- closing content -->
+				<div id= "content">
+					<img class="icon" src="images/icons/icon7.png">
+					<h1 class="title">FINAL DISPOSITION</h1>
+					<h2 class= "question">What would you be willing to donate?</h2>
+					
+					<div id ="choices">	
+						<center><a  class= "ThreeLongAnswer" href="livingWill_3.php">Any needed organs and/or parts for any purpose</a></center>					
+						<center><a  class= "ThreeLongAnswer" href="livingWill_3.php"> My body for anatomical study if needed</a></center>
+						<center><a class= "ThreeLongAnswer" href="livingWill_3.php">Only organs and/or parts for the purpose of transplantation, therapy, medical research, or 								education</a></center>	
+					</div><!-- closing choices -->
+				</div>
 			
 			<aside>
-				<img id="livingWill" src="images/sideBar/datalivingWill.png">
+				<img src="images/sideBar/dataFinalDispo_1.png">
 			</aside>
-			
-			</div><!closing wrapper-->
 		
+			</div><!closing wrapper-->
+			
 			<?php 
 				include 'exitMessage.php';
 			?>

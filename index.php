@@ -14,8 +14,8 @@
 		<body>
 			<nav id ="mainnav">
 				<ul>
-					<li><a href ="#"> about</a></li>
-					<li><a href ="#resources"> Resources</a></li>
+					<li><a class="mainPage" href ="#about"> ABOUT</a></li>
+					<li><a class="mainPage" href ="#resources"> RESOURCES</a></li>
 				</ul>
 			</nav>
 			
@@ -23,7 +23,7 @@
 				<img id="homepage" src="images/homepage/cover.png">
 				<img id="logo" src="images/homepage/logo.png">
 				<h1> <img src="images/homepage/create.png"></h1>
-				<a id="enter" href="page.php">ENTER</a>
+				<a id="enter" href="page0.php">ENTER</a>
 			</div>
 			
 			<div id= "info">
@@ -46,6 +46,7 @@
 			</div> <!-- closing div info -->
 				
 			<div id="about">
+			<A NAME="about"></A>
 			<img src= "images/homepage/iconInfo.png">
 			<h3> A Good Advance Planning For Health Care Decisions Is, In Reality, A Continuing Conversation - About Values, Priorities, The Meaning Of One's Life, And Quality Of Life. A Good Death  				Is A Toolkit That Contains A Variety Of Questions To Helps You Discover, Clarify, And Communicating What Is Important To You In The Face Of Death. </h3>		
 			</div>
@@ -59,11 +60,14 @@
 					<a href= "http://www.caregiver.org/caregiver/jsp/content_node.jsp?nodeid=397"><img src="images/homepage/resources/fga.png"></a>	
 					<a href="http://www.helpguide.org/elder/advance_directive_end_of_life_care.htm"> <img src="images/homepage/resources/help.png"></a>
 					<a href="http://money.cnn.com/2012/12/11/pf/end-of-life-care-duplicate-2.moneymag/index.html"> <img src="images/homepage/resources/cnn.png"></a>
+					<a href= "http://www.chcr.brown.edu/dying/2001DATA.HTM"><img src="images/homepage/resources/fga.png"></a>	
+					<a href="http://www.helpguide.org/elder/advance_directive_end_of_life_care.htm"> <img src="images/homepage/resources/help.png"></a>
+					<a href="http://journalstar.com/links/online-exclusives/nebraska-end-of-life-survey-results/pdf_f5c93ec4-ce4f-5edb-9b46-5bb975319963.html"><img src="images/homepage/resources/journal.png"></a>
 				</div>						
 			</div>
 			
 			<div id="contact">
-				<h4 id ="link"> agoodeath.com c Copyight 2013</h4>
+				<h4 id ="link"> agoodeath.com © CopyRight 2013</h4>
 				<div id="social">
 					<img src="images/homepage/mail.png">
 					<img src="images/homepage/twitter.png">
@@ -73,7 +77,7 @@
 			</div>
 			
 		</body>
-</html>
+</html> 
 
 
 

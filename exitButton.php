@@ -1,1 +1,1 @@
-<a id= "exit" href="#"> I WANT OUT <img id ="ex" src="images/ex.PNG"></a>
+<a id= "exit" href="#"> EXIT <img id ="ex" src="images/ex.PNG"></a>

@@ -64,11 +64,20 @@ html{
 body{
 	width: 100%;	
 }
-nav#mainnav{	
-	float: right;	
+nav#mainnav{
+	width: 130px;	
+	float: right;
+	margin-top:20px;
+	position: fixed;
 }
 nav#mainnav>ul>li{
 	display: inline;
+}
+a.mainPage{
+	font-family: 'Actor';
+	font-size: 12px;
+	color: #FF6666;
+
 }
 
 /*-----------------------------------------------------------------------------------*
@@ -94,13 +103,13 @@ div#homepageTop>h1{
 	padding-bottom: 30px;
 }
 a#enter{
-color: white;
-margin-left:654px;
-font-family: 'Actor';
-font-size: 12pt;
-padding: 10px 20px 10px 20px;
-border: solid 2px white;
-border-radius: 3px;	
+	color: white;
+	margin-left:654px;
+	font-family: 'Actor';
+	font-size: 12pt;
+	padding: 10px 20px 10px 20px;
+	border: solid 2px white;
+	border-radius: 3px;	
 }
 a#enter:hover{
 	color:#FF6666;
@@ -180,21 +189,23 @@ div#resources{
 	box-shadow: 8px 8px 19px #888888;
 	
 }
-#resources>h1{
+#resources h1{
 	font-family: 'Actor';
 	margin:10px 0 0 655px;
 }
 div#resources>img{
-	margin: 50px 0 0 662px;
+	margin: 50px 0 10px 662px;
+
 }
 div#resourcesImages{
-	margin:30px 0 0 300px;
+	width: 500px;
+	margin:30px auto;
 	
 }
 div#resourcesImages>a img{
 	width:70px;
-	margin-right: 10px;
-	border: 2px solid black;
+	margin: 0 10px  10px 0;
+	border: 1px solid black;
 }
 
 /*-----------------------------------------------------------------------------------*
@@ -271,9 +282,9 @@ div#out{
 }
 a#exit{
 	font-family:'Actor';
-	font-size: 12px;
+	font-size: 13px;
 	color:#FF6666;
-	margin-left: 10px;
+	margin-left: 26px;
 }
 
 /*-----------------------------------------------------------------------------------*
@@ -332,10 +343,9 @@ div#line{
 }
 div#LivingWilllLine{
 	top:54px;
-	left:445px;
+	left:455px;
 	position: absolute;
 }
-
 img.icon{
 	width:13%;
 	margin-left: 10px; 
@@ -352,18 +362,28 @@ img.livingWill{
 /*-----------------------------------------------------------------------------------*
 /* = progress bar
 /*-----------------------------------------------------------------------------------*/
+/*
 nav{
-width:100%;
-margin-top: 10px;
+	width:100%;
+	margin-top: 10px;
+	margin-left: 5px;
 }
-li{
-background: red;
-	border-radius: 50%;
-	width: 400px;
-	height: 150px; 
-	margin-right: 5px;
-	padding: 5px;
+
+ul#toolkit img{
+width:15px;
+height: 15px;
+
 }
+*/
+#progressbar{
+	margin: 10px 5px 0 15px;
+	width:97%;
+	height:20px;
+	background-image: url(../images/progressBar.png);
+	padding-right: 5px;
+}
+
+
 
 /*-----------------------------------------------------------------------------------*
 /* = choices
@@ -418,6 +438,20 @@ div#choices{
 	border-radius: 3px;
 	box-shadow: 3px 3px 25px #a5a3a3; 
 	padding: 10px;
+}
+.ThreeLongAnswer{
+	font-family:'Actor', sans-serif;
+    font-size: 9.5pt;
+    color: #3399CC;    
+    text-transform: uppercase; 
+	width:200px; 
+	height: 55px;
+	border: solid 1px #3399CC;
+	border-radius: 3px;
+	box-shadow: 3px 3px 25px #a5a3a3; 
+	padding: 10px;
+	float:right;
+	
 }
 .ThreeAnswer:hover{
 	color: #FF6666;
@@ -489,7 +523,7 @@ form p{
 /*-----------------------------------------------------------------------------------*/
 
 aside{
-	width:250px;
+	width:255px;
 	float: left;
 	margin-top:-20px;
 }
@@ -517,9 +551,22 @@ img#page12{
 img#livingWill{
 	margin-top: -4px;
 }
+img#livingWill3{
+	margin-right: -18px;
+}
+img#livingWill4{
+	margin-left: 10px;
+}
+img#whatIf{
+	margin-left: 10px;
+}
+img#whatIf1{
+	width:340px;
+	margin-left: -51px	
+}
 input#personalStories{
 	width:280px;
-	height: 340px;
+	height: 341px;
 	left:1061px;
 	top:51px;
 	z-index: 2;
@@ -527,9 +574,24 @@ input#personalStories{
 	background: none;
 	font-family: 'Actor'; 
 	font-size: 11px;
-	padding: 1px 0px 1px 0px;  	
+	padding: 1px 0px 1px 0px;  		
 }
-
+input#graveStories{
+	width:280px;
+	height: 153px;
+	left:1064px;
+	top:81px;
+	z-index: 2;
+	position: absolute;
+	background: none;
+	font-family: 'Actor'; 
+	font-size: 11px;
+	padding: 1px 0px 1px 0px; 
+	text-align:justify;
+}
+#social{
+	margin-left: 9px;
+}
 
 /*-----------------------------------------------------------------------------------*
 /* = exit message
@@ -544,7 +606,7 @@ input#personalStories{
 #message{
 	width:450px;
 	height: 400px;
-	margin-left: -65px;
+	margin-left: -110px;
 	padding: 45px;
 	background: white;
 	border: solid 1px #3399CC;
@@ -564,14 +626,14 @@ input#personalStories{
 	color: #3399CC;
 }
 #message p{
-margin-top: 20px;
-font-family: 'Actor';
-font-size: 16px;
-line-height: 21px;
+	margin:20px 0 30px 0;
+	font-family: 'Actor';
+	font-size: 16px;
+	line-height: 21px;
 }
 #reminder{
-margin-top: 20px;
-margin-bottom: 30px;
+	margin-top: 20px;
+	margin-bottom: 30px;
 }
 
 a.exitLink{
@@ -586,7 +648,19 @@ a.exitLink{
 	margin-right: 10px;
 }
 a.exitLink:hover{
-opacity: 0.7;
+	opacity: 0.7;
+}
+select#reminder{
+	width: 100px;
+	margin-top: -49px;
+	margin-right: 167px;
+	float: right;
+	border: solid 1px #3399CC;
+	border-radius: 3px;
+	box-shadow: 3px 3px 25px #a5a3a3; 
+	padding: 10px;
+	font-family: 'Actor';
+	display: inline;	
 }
 
 /*-----------------------------------------------------------------------------------*
@@ -604,7 +678,7 @@ div#slider{
 	font-size: 12px;
 	text-align: center;
 	width:60px; 
-	margin-top:-40px;
+	margin-top:-36px;
 	height: 60px;
 	border: solid 1px #3399CC;
 	border-radius: 3px;
@@ -612,12 +686,23 @@ div#slider{
 	padding: 10px;
 }
 #want{
-	margin-left: -95px;
+	margin-left: -82px;
 	float:left;
 }
 #doNotWant{
-	margin-right: -95px;
+	margin-right: -82px;
 	float: right;
 }
+.box p{
+	padding-top: 5px;
+}
+a#next{
+	margin-left: 237px;
+	margin-top: 157px;
+	width:40px; 
+	height: 15px;
+	float:left;
+}
+
 
 	

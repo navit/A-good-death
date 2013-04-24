@@ -61,24 +61,24 @@ include 'content.php';
 			<div id= "content">
 				<img class="icon livingWill" src="images/icons/whatIf.png">
 				<h1 class="title">what if</h1>
-				<h2 class= "question">you are in severe discomfort most of the time, such as nausea or diarrhea.</h2>
-				
-			<div id="slider">
-				<!-- <img src= "images/slider/slider.png"> -->			
+				<h2 class= "question">you were in severe discomfort most of the time, such as nausea or diarrhea:</h2>
+
+			<div id="slider">			
 				<div class="box" id="want">
 					<img src= "images/slider/want.png">
 					<p> Want Treatment </p>
 					</div>
 				<div class="box" id="doNotWant">
 					<img src= "images/slider/dontWant.png">
-					<p>Do Not Want Treatment </p>
-				</div>			
+					<p>Don't Want Treatment </p>
+				</div>				
 			</div><!-- closing slider -->
+			<center><a id="next" class="answer" href="whatIf_1.php">NEXT</a></center>
 			
 			</div><!-- closing content -->
 			
 			<aside>
-			<img id="livingWill" src="images/sideBar/datalivingWill_2.png">
+			<img id="whatIf" src="images/sideBar/dataWhatIf.png">
 			</aside>
 			</div>
 			
